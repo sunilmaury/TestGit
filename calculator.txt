@@ -1,0 +1,31 @@
+#the three type of corpet price
+#1.stander quality price 3.75
+#2.selver quality price 5.30
+#3.stander quality price 6.50
+#create variable for price
+
+price=[3.75,5.30,6.50]
+
+#deffing the function name costcalculation
+
+def costcalculation(width,height,choice):
+    return width*height*price[choice-1]
+#creating function main
+
+def main():
+  width=float(input("please enter width of your room : "))
+  height=float(input("please enter hight of your room : "))
+  print("-----please select corpet quality-----")
+  print("1 stander quality select 1 for price")
+  print("2 selver quality select 2 for price")
+  print("3 gold quality select 3 for price")
+  choice=int(input("please enter your choice price : "))
+  print("The corpet cost is: ".format(costcalculation(width,height,choice)))
+#use if statment
+
+if __name__=="__main__":
+
+# call the function    
+     
+	 main() 
+	 
